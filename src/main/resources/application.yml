@@ -1,0 +1,17 @@
+micronaut:
+  application:
+    name: serializer
+  server:
+    netty:
+      access-logger:
+        enabled: true
+    default-charset: utf-8
+    log-handled-exceptions: true
+    thread-selection: IO
+  http:
+    client:
+      log-level: debug
+netty:
+  default:
+    allocator:
+      max-order: 3
