@@ -9,9 +9,9 @@ class PingController {
 
     @Post
     String ping(Ping request) {
-        if (request.getName() == null) {
+        if (request.name() == null) {
             return "pong";
         }
-        return request.getName();
+        return request.name();
     }
 }
